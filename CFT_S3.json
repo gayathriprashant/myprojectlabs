@@ -1,0 +1,17 @@
+{
+    "Resources": {
+        "s3test": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+            "BucketName" : "gayathritestgithub",
+            "PublicAccessBlockConfiguration" : 
+            {
+                 "BlockPublicAcls" : false,
+                 "BlockPublicPolicy" : false,
+                 "IgnorePublicAcls" : false,
+                 "RestrictPublicBuckets" : false
+            }
+            }
+        }
+    }
+}
