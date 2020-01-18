@@ -3,7 +3,7 @@
         "s3test": {
             "Type": "AWS::S3::Bucket",
             "Properties": {
-            "BucketName" : "gayathritest872019",
+            "BucketName" : "gayathriwindowstest2020",
             "PublicAccessBlockConfiguration" : 
             {
                  "BlockPublicAcls" : false,
