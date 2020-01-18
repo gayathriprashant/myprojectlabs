@@ -1,0 +1,17 @@
+{
+    "Resources": {
+        "s3test": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+            "BucketName" : "gayathritest872019",
+            "PublicAccessBlockConfiguration" : 
+            {
+                 "BlockPublicAcls" : false,
+                 "BlockPublicPolicy" : false,
+                 "IgnorePublicAcls" : false,
+                 "RestrictPublicBuckets" : false
+            }
+            }
+        }
+    }
+}

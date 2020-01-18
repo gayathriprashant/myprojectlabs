@@ -1,0 +1,19 @@
+{
+    "Resources": {
+        "CFTtest": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+            	"ImageId" : "ami-00eb20669e0990cb4",
+            	"InstanceType" : "t2.micro",
+            	"SecurityGroupIds" : [ "sg-034ee0b0e9f0dc9f3" ],
+            	"SubnetId" : "subnet-3980ed17",
+                "KeyName" : "sample",
+                "Tags" : 
+                [{
+                  "Key": "Name",
+                  "Value": "SampleInstance"
+                }]
+            }
+        }
+    }
+}

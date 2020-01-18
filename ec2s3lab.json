@@ -1,0 +1,38 @@
+{
+    "Resources": {
+        "EC2Instance": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+            	"ImageId" : "ami-00eb20669e0990cb4",
+            	"InstanceType" : "t2.micro",
+            	"SecurityGroupIds" : [ "sg-034ee0b0e9f0dc9f3" ],
+            	"SubnetId" : "subnet-3980ed17",
+                "Tags" : 
+                [{
+                  "Key": "Name",
+                  "Value": "Server-SG-lab-S3"
+                }]
+            }
+        },
+        "EC2SG": {
+            "Type": "AWS::EC2::SecurityGroup",
+            "Properties": {
+                "GroupDescription" : "Creating EC2 security group",
+                "GroupName" : "EC2S3-SecurityGroup",
+                "VpcId" : "vpc-2dcd7f57",
+                "SecurityGroupIngress" : 
+                [{
+                   "IpProtocol": "tcp",
+                   "FromPort": 22,
+                   "ToPort": 22,
+                   "CidrIp": "70.120.104.156/32"
+                }],
+                "Tags" : 
+                [{
+                  "Key": "Name",
+                  "Value": "Cloud-EC2-SG-S3"
+                }]
+            }
+        }
+    }
+}
