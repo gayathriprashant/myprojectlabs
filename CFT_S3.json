@@ -3,7 +3,7 @@
         "s3test": {
             "Type": "AWS::S3::Bucket",
             "Properties": {
-            "BucketName" : "gayathrijenkinspipeline2020",
+            "BucketName" : "gayathri-test-jenkinspipeline-2020",
             "PublicAccessBlockConfiguration" : 
             {
                  "BlockPublicAcls" : false,
